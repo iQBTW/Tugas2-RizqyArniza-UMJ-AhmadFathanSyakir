@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Source+Sans+Pro&display=swap');
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .main_content {
+        padding: 10px 10px;
+        background-image: linear-gradient(15deg, #E8D5C4, #A8D8EA);
+    }
+
+    .title {
+        font-weight: bold;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16pt;
+        margin: 10px 15px;
+    }
+
+    .content_main {
+        margin: 10px 15px;
+    }
+
+    .content {
+        font-family: monospace;
+        font-size: 12pt;
+    }
+
+    .main_content .left {
+        padding-left: 150px;
+    }
+
+    .main_content img {
+        padding: 10px 20px;
+        border-radius: 50px;
+        width: 50%;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+
+
+
+    /* Secondary Content CSS */
+    section {
+        table-layout: auto;
+    }
+
+    .secondary_content {
+        background-color: #E8D5C4;
+    }
+
+    .content_1 img {
+        padding: 30px 0px;
+        width: 10%;
+    }
+
+    .content_2 img {
+        padding: 30px 0px;
+        width: 30%;
+    }
+
+    .content_3 img {
+        padding: 30px 0px;
+        width: 9%;
+    }
+
+    h3 {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16pt;
+    }
+
+    button {
+        border-radius: 5px;
+        border-color: bisque;
+        font-family: 'Source Sans Pro', sans-serif;
+        padding: 5px 5px;
+        text-decoration: none;
+        background-color: bisque;
+        transition: all 0.3s ease 0s;
+    }
+
+    button:hover {
+        border-radius: 5px;
+        border-color: black;
+        background-color: #222831;
+    }
+
+    a {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
+        color: black;
+        
+    }
+
+    a:hover {
+        color: #71C9CE;
+    }
+
+    p {
+        padding: 10px 20px;
+        font-weight: 300;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 12pt;
+    }
+</style>
+<body>
+
+    <!-- Main Content -->
+    <main>
+        <article>
+            <table class="main_content" cellspacing="0" cellpadding="10" width="100%">
+                <tr>
+                    <td class="left">
+                        <p class="title">Popular Platform Games</p>
+                        <p class="content_main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, debitis. <br> Magni perspiciatis natus ex fugiat. <br> Quidem quos asperiores inventore et!</p>
+                    </td>
+                    <td class="right" align="center">
+                        <img src="img/maxresdefault.jpg" alt="">
+                    </td>
+                </tr>
+            </table>
+        </article>
+    </main>
+
+    <!-- Secondary Content -->
+    <section>
+        <article>
+            <table class="secondary_content" width="100%" cellpadding="10">
+                <tr>
+                    <td class="content_1" align="center" cellpadding="10" cellspacing="0">
+                        <h3>Steam</h3>
+                        <br>
+                        <img src="img/steam-logo-transparent.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio incidunt iste et accusamus cumque debitis sapiente rerum quas possimus rem?</p>
+                        <br>
+                        <button><a href="https://store.steampowered.com/" target="_blank">See More</a></button>
+                    </td>
+                    <td class="content_2" align="center">
+                        <h3>Ubisoft</h3>
+                        <br>
+                        <img src="img/ubisoft-2-logo-png-transparent.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta ratione deleniti quibusdam molestiae ad adipisci sapiente placeat dolorum, natus quisquam!</p>
+                        <br>
+                        <button><a href="https://www.ubisoft.com/en-us" target="_blank">See More</a></button>
+                    </td>
+                    <td class="content_3" align="center">
+                        <h3>Epic Games</h3>
+                        <br>
+                        <img src="img/epic-games-2-logo-png-transparent.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sapiente voluptates sed culpa modi labore eligendi porro. Eum, similique impedit.</p>
+                        <br>
+                        <button><a href="https://www.epicgames.com/site/en-US/home" target="_blank">See More</a></button>
+                    </td>
+                </tr>
+            </table>
+        </article>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Shantell+Sans:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: #B5F1CC;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    width: 10%;
+    float: left;
+}
+
+.logo h3 {
+    font-family: 'Shantell Sans', cursive;
+    color: #443C68;
+    padding-top: 20px;
+    position: relative;
+    right: -10px;
+}
+
+nav .logo {
+    display: none;
+}
+
+.nav_links li, a {
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.logo img, h3{
+    cursor: pointer;
+}
+
+.nav_links a {
+    font-family: 'Shantell Sans', cursive;
+    font-weight: bold;
+    transition: all 0.5s ease 0s;
+}
+
+.nav_links a:hover {
+    text-shadow: 15px 13px;
+    position: relative;
+    bottom: 5px;
+    color: #D61355;
+}
+
+
+/* Sidebar Menu */
+.sidebar {
+    display: none;
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.sidebar:hover {
+    background: #443C68;
+    border-radius: 500px;
+}
+
+.sidebar div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #20262E;
+}
+
+/* Sidebar Saat Resolusi Mengecil */
+@media only screen and (max-width: 1160px) {
+    header {
+        width: 90%;
+        padding: 5px 20px;
+    }
+
+    nav {
+        position: absolute;
+        left: -300px;
+        top: 0;
+        z-index: 999;
+        width: 280px;
+        height: 100%;
+        background-color: #B5F1CC; 
+        transition: 0.3s;
+        box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    #nav_sidebar:checked ~ nav {
+        left: 0;
+    }
+
+    nav .logo{
+        font-size: 12pt;
+        display: block;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    }
+    
+
+    nav .logo img {
+        width: 20%;
+    }
+
+    nav h3 {
+        padding: 0;
+        position: relative;
+        top: -5px;
+    }
+
+    nav ul li a {
+        margin-bottom: 10px;
+        padding: 10px 0px;
+        border-radius: 5px;
+    }
+
+    nav ul {
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .sidebar {
+        display: block;
+    }
+}
+
+/* Middle Content */
+.content_container {
+    position: absolute;
+    top: 30%;
+    bottom: 50%;
+    padding: 10px 0px;
+    text-align: center;
+    width: 100%;
+    max-height: 50%;
+    height: 50%;
+}
+
+#title_1 {
+    font-size: 25pt;
+    font-family: 'Shantell Sans', cursive;
+}
+
+#title_2 {
+    font-size: 30pt;
+    font-family: 'Pacifico', cursive;
+}
+
+.img_content img {
+    background-position: center;
+    opacity: 0.8;
+    width: 100%;
+    height: 330px;
+}
+
+/* Secondary Content */
+section {
+    background-color: #F8CBA6;
+    position: relative;
+    top: -15px;
+    height: 100%;
+}
+
+section h3 {
+    margin: 10px 0;
+    font-size: 25pt;
+    text-align: center;
+    font-family: 'Pacifico', cursive;;
+}
+
+.column {
+    position: relative;
+    left: 135px;
+    float: left;
+    width: 30%;
+    
+}
+
+.card_content {
+    padding: 0 5px;
+    transform: 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    width: 50%;
+    border-radius: 5px;
+}
+
+.card_content:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    padding: 0;
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+}
+.card button {
+    padding: 5px 8px;
+    background-color: #F8CBA6;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.5s ease 0s;
+}
+
+.card p, .card img , .card button {
+    font-family: 'Pacifico', cursive;;
+    margin: 10px 0;
+}
+
+.card a {
+    text-decoration: none;
+    font-family: 'Shantell Sans', cursive;
+    color: #20262E;
+    transition: all 0.5s ease 0s;
+}
+
+.card button, a:hover {
+    color: #B5F1CC;
+}
+
+.rows {
+    margin: 10px 0px;
+}
+
+@media screen and (max-width: 600px) {
+    .column{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
